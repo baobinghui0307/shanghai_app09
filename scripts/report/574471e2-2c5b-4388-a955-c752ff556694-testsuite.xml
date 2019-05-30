@@ -1,0 +1,26 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1559197426762" stop="1559197426762">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1559197426762" status="broken" stop="1559197426762">
+      <name>test_login</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>test_login.py:33: in &lt;module&gt;
+    class TestLogin:
+test_login.py:52: in TestLogin
+    @pytest.mark.parametrize("case_num, account, passwd, exp_data", get_login_data().get("suc"))
+test_login.py:20: in get_login_data
+    login_data = GetFileData().get_yaml_data("logindata.yml")
+..\Base\getfiledata.py:18: in get_yaml_data
+    with open(file_path, "r", encoding="utf-8") as f:
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\sh-app8-project(1)\\sh-app8-project\\scripts\\Data\\logindata.yml'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
